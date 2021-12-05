@@ -49,8 +49,7 @@ try {
   .readdirSync(__dirname)
   .filter(file => {
     console.log(file);
-    // uncomment this when create new model. it will disalbe permission model that create error
-    // return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(0,-3) !== '.js') && (file !== 'permissionModel.js') ;
+   
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(0,-3) !== '.js') ;
   })
   .forEach(file => {
